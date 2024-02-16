@@ -28,7 +28,7 @@ spec:
       jsonPointers:
         - /data
         - /stringData
-    - group: '*'
-      kind: '*'
-      managedFieldsManagers:
-        - creation
+    - group: ''
+      kind: Deployment
+      jsonPointers:
+        - /metadata/annotations/creation
