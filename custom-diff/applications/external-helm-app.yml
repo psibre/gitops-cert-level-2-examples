@@ -22,3 +22,14 @@ spec:
     syncOptions:
       - CreateNamespace=true  
    
+  ignoreDifferences:
+    - group: ''
+      kind: Secret
+      jsonPointers:
+        - /data
+        - /stringData
+    - group: ''
+      kind: Deployment
+      managedFieldsManagers:
+        - creation
+
